@@ -1,0 +1,3 @@
+## 2024-10-22 - Visual Focus States for Custom Slider Components
+**Learning:** Custom interactive elements (like the `.slider-thumb` implemented from scratch, or web components like `img-comparison-slider`) which have `tabindex="0"` for keyboard navigation do not automatically receive default browser focus styles (or they appear poorly). Additionally, elements with `pointer-events: none` can still receive keyboard focus if they have `tabindex`, meaning they must have explicit `:focus-visible` styles to remain accessible to keyboard users.
+**Action:** When adding custom `tabindex` to non-standard interactive components, always explicitly style `:focus-visible` to provide clear keyboard focus indicators.

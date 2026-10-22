@@ -670,7 +670,7 @@ img-comparison-slider {
 }
 
 img-comparison-slider:focus-visible {
-  box-shadow: 0 0 0 4px var(--brand-green);
+  box-shadow: inset 0 0 0 4px var(--brand-green);
   border-radius: 0.5rem;
 }
 

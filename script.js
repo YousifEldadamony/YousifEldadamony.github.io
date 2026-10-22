@@ -47,10 +47,12 @@ document.querySelectorAll('.image-comparison-container').forEach(container => {
   const sliderThumb = container.querySelector('.slider-thumb');
 
   let isDragging = false;
+  let cachedRect = null;
 
   // Set initial width of overlay image to match container to prevent squishing
   const setOverlayImageWidth = () => {
-    const containerWidth = container.getBoundingClientRect().width;
+    cachedRect = container.getBoundingClientRect();
+    const containerWidth = cachedRect.width;
     overlayImage.style.width = `${containerWidth}px`;
   };
 
@@ -68,19 +70,19 @@ document.querySelectorAll('.image-comparison-container').forEach(container => {
   window.addEventListener('resize', setOverlayImageWidth);
 
   const handleDrag = (e) => {
-    if (!isDragging) return;
+    if (!isDragging || !cachedRect) return;
 
-    const rect = container.getBoundingClientRect();
     const clientX = e.type.includes('mouse') ? e.clientX : (e.touches ? e.touches[0].clientX : e.clientX);
 
     // Calculate x relative to container, bound between 0 and container width
-    const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
-    const percent = (x / rect.width) * 100;
+    const x = Math.max(0, Math.min(clientX - cachedRect.left, cachedRect.width));
+    const percent = (x / cachedRect.width) * 100;
     setPosition(percent);
   };
 
   const startDrag = (e) => {
     isDragging = true;
+    cachedRect = container.getBoundingClientRect();
     handleDrag(e);
     window.addEventListener('mousemove', handleDrag);
     window.addEventListener('mouseup', stopDrag);

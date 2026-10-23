@@ -107,7 +107,8 @@ document.querySelectorAll('.image-comparison-container').forEach(container => {
   sliderThumb.addEventListener('keydown', (e) => {
     if (sliderThumb.getAttribute('role') !== 'slider') return;
 
-    const current = Number.parseFloat(sliderThumb.style.left) || 50;
+    const parsedLeft = Number.parseFloat(sliderThumb.style.left);
+    const current = Number.isNaN(parsedLeft) ? 50 : parsedLeft;
     let next = current;
 
     if (e.key === 'ArrowLeft') next = current - 5;

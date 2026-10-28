@@ -38,7 +38,7 @@ class StaticChecks(unittest.TestCase):
             for key in ("aria-controls", "aria-labelledby", "aria-describedby"):
                 for target in attrs.get(key, "").split():
                     self.assertIn(target, ids, (tag, key, target))
-            for key in ("src", "href"):
+            for key in ("src", "href", "poster"):
                 url = urlsplit(attrs.get(key, ""))
                 if url.scheme or url.netloc:
                     continue
@@ -59,6 +59,7 @@ class StaticChecks(unittest.TestCase):
             if tag == "video":
                 self.assertEqual(attrs.get("preload"), "none")
                 self.assertTrue(attrs.get("aria-label"))
+                self.assertTrue(attrs.get("poster"))
 
     def test_security_and_dependency_boundaries(self):
         policies = [a["content"] for tag, a in self.doc.elements
@@ -146,6 +147,13 @@ class BrowserChecks(unittest.TestCase):
 
     def test_videos_do_not_download_before_playback(self):
         self.page.wait_for_timeout(500)
+        for video in self.page.locator("video").all():
+            self.assertTrue(self.page.evaluate("""async src => {
+              const image = new Image();
+              image.src = src;
+              await image.decode();
+              return image.naturalWidth > 0;
+            }""", video.get_attribute("poster")))
         self.assertEqual(self.media_requests, [])
 
     def test_touch_drag_and_vertical_page_scrolling(self):

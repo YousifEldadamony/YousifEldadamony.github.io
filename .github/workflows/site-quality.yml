@@ -4,6 +4,7 @@ on:
   pull_request:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -23,6 +24,12 @@ jobs:
         run: |
           python -m pip install -r requirements-dev.txt
           python -m playwright install --with-deps chromium
+      - name: Generate missing video previews
+        run: |
+          if ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update && sudo apt-get install -y ffmpeg
+          fi
+          python scripts/generate_video_posters.py
       - name: Download and verify the accessibility checker
         run: |
           curl --fail --silent --show-error --location --max-time 60 https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.3/axe.min.js -o "$RUNNER_TEMP/axe.min.js"
@@ -33,3 +40,42 @@ jobs:
         env:
           AXE_CORE_PATH: ${{ runner.temp }}/axe.min.js
         run: python -m unittest discover -s tests -v
+
+  publish-posters:
+    needs: quality
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: publish-video-posters
+      cancel-in-progress: false
+    permissions:
+      contents: write
+      pages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate video previews
+        run: |
+          if ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update && sudo apt-get install -y ffmpeg
+          fi
+          python scripts/generate_video_posters.py
+      - name: Save generated previews
+        id: save
+        run: |
+          git add -- index.html Assets/Video-Posters
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Generate video preview images'
+          git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      - name: Rebuild GitHub Pages
+        if: steps.save.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

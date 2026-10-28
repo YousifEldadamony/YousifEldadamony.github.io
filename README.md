@@ -1,7 +1,22 @@
 # Yousif Eldadamony — dental CAD/CAM portfolio
 
 Static HTML, CSS, and JavaScript hosted on GitHub Pages. There is no application
-backend, database, API, or build step. Contact links open email and external profiles.
+backend, database, or API. Contact links open email and external profiles.
+
+## Adding videos
+
+Add the video file and its `<video src="…">` entry to `index.html`. GitHub Actions
+generates and links a small preview image when the change reaches `main`, then
+requests a GitHub Pages rebuild. You do not need to create a thumbnail yourself.
+An explicit custom `poster` image is preserved. Automatically generated covers
+refresh when a video's contents change; unchanged videos are skipped.
+
+For a local preview, install FFmpeg and run `python scripts/generate_video_posters.py`.
+The workflow also runs this generator before checking a pull request. Its publishing
+job can write only after quality checks pass on `main`; pull-request checks have
+read-only repository access. Automatic commits require Actions to be allowed to
+push to `main`, and the rebuild request uses GitHub Pages branch publishing.
+The workflow's **Run workflow** button on `main` can retry generation and rebuilding.
 
 ## Local preview
 
@@ -11,7 +26,7 @@ Policy deliberately prevents loading resources from arbitrary origins.
 
 ## Quality checks
 
-Python 3.12+ and Chromium are used only for development tests:
+Python 3.12+, FFmpeg, and Chromium are used for development and publishing checks:
 
 ```sh
 python3 -m venv .venv

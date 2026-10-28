@@ -1,58 +1,64 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yousif Eldadamony</title>
-    <meta
-      name="description"
-      content="Portfolio of a Digital Dental CAD/CAM Specialist & Workflow Architect."
-    />
-    <link rel="icon" type="image/png" href="Assets/yd-logo.png" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8.0.7/dist/index.js" integrity="sha512-aJeu0o/K7OpVaC02G7zFj6/63AB87JGczNtD973hBJDSDagKGaorcbnZoe/Du6Bp9PsfydvC4dSsqz+qOwTzqg==" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8.0.7/dist/styles.css" integrity="sha512-vVRO4V011qqF7bxsMSpzLdztX4DsIXNQGk4bXSKZ5cnjo4DN0EEDc6C/4ZLaz80JUJKI2lVRlBTQTSUSueP4ng==" crossorigin="anonymous" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yousif Eldadamony | Digital Dental CAD/CAM Portfolio</title>
+    <meta name="description" content="Portfolio of a Digital Dental CAD/CAM Specialist &amp; Workflow Architect.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#0f1117">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://cdnjs.cloudflare.com; font-src https://cdnjs.cloudflare.com; img-src 'self'; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <link rel="canonical" href="https://yousifeldadamony.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yousif Eldadamony | Digital Dental CAD/CAM Portfolio">
+    <meta property="og:description" content="Digital dental CAD/CAM, restoration design, and surgical guide planning portfolio.">
+    <meta property="og:url" content="https://yousifeldadamony.github.io/">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="Assets/yd-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="#hero" aria-label="Dental CAD/CAM home">
-          <img class="brand-logo" src="Assets/yd-logo.png" alt="YD logo" height="40" />
+          <img class="brand-logo" src="Assets/yd-logo.png" alt="YD logo" height="2048" width="2048" decoding="async">
         </a>
-
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
-        >
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
           <span></span>
           <span></span>
           <span></span>
         </button>
-
-        <nav class="main-nav" aria-label="Primary">
+        <nav id="primary-navigation" class="main-nav" aria-label="Primary">
           <ul class="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">3D Gallery</a></li>
-            <li><a href="#capabilities">Capabilities</a></li>
-            <li><a href="#workstation">Tech Stack</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#gallery">3D Gallery</a>
+            </li>
+            <li>
+              <a href="#capabilities">Capabilities</a>
+            </li>
+            <li>
+              <a href="#workstation">Tech Stack</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </nav>
-
         <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
           <i class="fa-solid fa-sun" aria-hidden="true"></i>
           <i class="fa-solid fa-moon" aria-hidden="true"></i>
         </button>
       </div>
     </header>
-
-    <main>
-      <section id="hero" class="section hero">
+    <main id="main-content" tabindex="-1">
+      <section id="hero" class="section hero" tabindex="-1">
         <div class="container">
-          <p class="eyebrow">Digital Dental CAD/CAM Specialist & Workflow Architect</p>
+          <p class="eyebrow">Digital Dental CAD/CAM Specialist &amp; Workflow Architect</p>
           <h1>
             Dental graduate specializing in digital pipelines, CAD restoration design, and
             surgical guide planning.
@@ -64,8 +70,7 @@
           <a class="button" href="#gallery">Explore Portfolio</a>
         </div>
       </section>
-
-      <section id="about" class="section">
+      <section id="about" class="section" tabindex="-1">
         <div class="container">
           <h2>About</h2>
           <p>
@@ -75,552 +80,555 @@
           </p>
         </div>
       </section>
-
-      <section id="gallery" class="section">
+      <section id="gallery" class="section" tabindex="-1">
         <div class="container">
           <h2>3D Gallery: Indirect Restorations</h2>
-
-          <h3 class="case-title">3 Unit Zirconia Bridge</h3>
+          <h3 class="case-title" id="case-1-title">3 Unit Zirconia Bridge</h3>
           <div class="showcase-grid">
             <!-- Videos -->
             <article class="model-card">
-              <h3>Buccal & Lingual View</h3>
+              <h4>Buccal &amp; Lingual View</h4>
               <div class="video-container">
-                <video
-                  class="native-video"
-                  src="Assets/3-Unit-Zirconia-Bridge/Buccal-and-Lingual.mp4"
-                  controls
-                  muted
-                  playsinline
-                  preload="metadata">
+                <video class="native-video" src="Assets/3-Unit-Zirconia-Bridge/Buccal-and-Lingual.mp4" controls muted playsinline preload="none" aria-label="Buccal &amp; Lingual View — silent dental model demonstration" width="1280" height="720">Your browser does not support video. <a href="Assets/3-Unit-Zirconia-Bridge/Buccal-and-Lingual.mp4">Download the silent dental model demonstration.</a>
                 </video>
               </div>
               <div class="clinical-checklist-container">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Emergence Profile:</strong> Physiological axial emergence angle without horizontal ledges or overcontouring, preventing subgingival plaque accumulation.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Emergence Profile:</strong> Physiological axial emergence angle without horizontal ledges or overcontouring, preventing subgingival plaque accumulation.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Embrasure Morphology:</strong> Wide, accessible cervical and occlusal embrasures providing ample room for interdental papilla preservation and interproximal brush access.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Embrasure Morphology:</strong> Wide, accessible cervical and occlusal embrasures providing ample room for interdental papilla preservation and interproximal brush access.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Anatomic Transition:</strong> Buccal cuspal heights and axial wall inclinations continuous with the curve of the natural lower dentition.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Anatomic Transition:</strong> Buccal cuspal heights and axial wall inclinations continuous with the curve of the natural lower dentition.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <article class="model-card">
-              <h3>Occlusal & Intaglio Surface</h3>
+              <h4>Occlusal &amp; Intaglio Surface</h4>
               <div class="video-container">
-                <video
-                  class="native-video"
-                  src="Assets/3-Unit-Zirconia-Bridge/Occlusal-and-intaglio.mp4"
-                  controls
-                  muted
-                  playsinline
-                  preload="metadata">
+                <video class="native-video" src="Assets/3-Unit-Zirconia-Bridge/Occlusal-and-intaglio.mp4" controls muted playsinline preload="none" aria-label="Occlusal &amp; Intaglio Surface — silent dental model demonstration" width="1280" height="720">Your browser does not support video. <a href="Assets/3-Unit-Zirconia-Bridge/Occlusal-and-intaglio.mp4">Download the silent dental model demonstration.</a>
                 </video>
               </div>
               <div class="clinical-checklist-container">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Single Pontic Contact:</strong> A Modified Ridge Lap profile establishing light, pressure-free contact on the buccal aspect of the ridge crest with a completely convex, polished intaglio surface.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Single Pontic Contact:</strong> A Modified Ridge Lap profile establishing light, pressure-free contact on the buccal aspect of the ridge crest with a completely convex, polished intaglio surface.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Marginal Adaptation:</strong> Continuous seal along the finish line with no marginal gaps, chipping, or horizontal ledges under high magnification.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Marginal Adaptation:</strong> Continuous seal along the finish line with no marginal gaps, chipping, or horizontal ledges under high magnification.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Fissure Geometry:</strong> Rounded internal line angles in primary fissures to eliminate structural notch stresses during ceramic sintering.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Fissure Geometry:</strong> Rounded internal line angles in primary fissures to eliminate structural notch stresses during ceramic sintering.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <!-- Image Comparison Sliders -->
             <article class="model-card slider-card">
-              <h3>Buccal Occlusal Relation</h3>
+              <h4 id="comparison-1-title">Buccal Occlusal Relation</h4>
               <div class="image-comparison-container">
-                <img loading="lazy" src="Assets/3-Unit-Zirconia-Bridge/Hide-antagonist-buccal.png" alt="Buccal view without antagonist teeth" class="img-base" />
-                <div class="img-overlay-wrapper" style="width: 50%;">
-                  <img loading="lazy" src="Assets/3-Unit-Zirconia-Bridge/Show-antagonist-Buccal.png" alt="Buccal view showing antagonist teeth" class="img-overlay" />
+                <img loading="lazy" src="Assets/3-Unit-Zirconia-Bridge/Hide-antagonist-buccal.png" alt="Buccal view without antagonist teeth" class="img-base" width="1885" height="1103" decoding="async">
+                <div class="img-overlay-wrapper">
+                  <img loading="lazy" src="Assets/3-Unit-Zirconia-Bridge/Show-antagonist-Buccal.png" alt="Buccal view showing antagonist teeth" class="img-overlay" width="1969" height="1121" decoding="async">
                 </div>
-                <div class="slider-thumb" style="left: 50%;">
+                <div class="slider-thumb" aria-hidden="true">
                   <div class="thumb-line"></div>
                   <div class="thumb-line"></div>
                 </div>
+                <input class="comparison-range" type="range" min="0" max="100" step="1" value="50" disabled aria-labelledby="case-1-title comparison-1-title" aria-describedby="comparison-1-help">
               </div>
-              <p class="helper-text">Drag left/right to compare</p>
+              <p class="helper-text" id="comparison-1-help">Image comparison</p>
               <div class="clinical-checklist-container">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Static Stops:</strong> Discrete, punctate contact points distributed across central fossae and marginal ridges, directing masticatory forces along the vertical axis of the abutment roots.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Static Stops:</strong> Discrete, punctate contact points distributed across central fossae and marginal ridges, directing masticatory forces along the vertical axis of the abutment roots.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Standard Table Width:</strong> Full 1:1 anatomical buccolingual table width matching the adjacent lower molars/premolars.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Standard Table Width:</strong> Full 1:1 anatomical buccolingual table width matching the adjacent lower molars/premolars.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Occlusal Thickness:</strong> Uniform clearance providing 1.0 mm to 1.5 mm of monolithic zirconia across functional load areas.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Occlusal Thickness:</strong> Uniform clearance providing 1.0 mm to 1.5 mm of monolithic zirconia across functional load areas.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <article class="model-card slider-card">
-              <h3>Lingual Intercuspation</h3>
+              <h4 id="comparison-2-title">Lingual Intercuspation</h4>
               <div class="image-comparison-container">
-                <img loading="lazy" src="Assets/3-Unit-Zirconia-Bridge/Hide-antagonist-Lingual.png" alt="Lingual view without antagonist teeth" class="img-base" />
-                <div class="img-overlay-wrapper" style="width: 50%;">
-                  <img loading="lazy" src="Assets/3-Unit-Zirconia-Bridge/Show-antagonist-lingual.png" alt="Lingual view showing antagonist teeth" class="img-overlay" />
+                <img loading="lazy" src="Assets/3-Unit-Zirconia-Bridge/Hide-antagonist-Lingual.png" alt="Lingual view without antagonist teeth" class="img-base" width="2254" height="847" decoding="async">
+                <div class="img-overlay-wrapper">
+                  <img loading="lazy" src="Assets/3-Unit-Zirconia-Bridge/Show-antagonist-lingual.png" alt="Lingual view showing antagonist teeth" class="img-overlay" width="2275" height="915" decoding="async">
                 </div>
-                <div class="slider-thumb" style="left: 50%;">
+                <div class="slider-thumb" aria-hidden="true">
                   <div class="thumb-line"></div>
                   <div class="thumb-line"></div>
                 </div>
+                <input class="comparison-range" type="range" min="0" max="100" step="1" value="50" disabled aria-labelledby="case-1-title comparison-2-title" aria-describedby="comparison-2-help">
               </div>
-              <p class="helper-text">Drag left/right to compare</p>
+              <p class="helper-text" id="comparison-2-help">Image comparison</p>
               <div class="clinical-checklist-container">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Dynamic Clearance:</strong> Disclusion during protrusive and lateral excursions (group or canine guidance maintained away from the pontic unit).</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Dynamic Clearance:</strong> Disclusion during protrusive and lateral excursions (group or canine guidance maintained away from the pontic unit).</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Bilateral Holding Stability:</strong> Uniform occlusal load intensity equivalent to the contralateral quadrants in maximum intercuspation.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Bilateral Holding Stability:</strong> Uniform occlusal load intensity equivalent to the contralateral quadrants in maximum intercuspation.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <!-- Engineering & Material Standards -->
             <article class="model-card">
-              <h3>Engineering & Material Standards</h3>
-              <div class="clinical-checklist-container" style="border-top: none; margin-top: 0; padding-top: 0;">
+              <h4>Engineering &amp; Material Standards</h4>
+              <div class="clinical-checklist-container checklist-standalone">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Connector Symmetry:</strong> Uniform cross-sectional area of &ge; 9 mm&sup2; (3 mm &times; 3 mm) at both mesial and distal abutment junctions.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Connector Symmetry:</strong> Uniform cross-sectional area of ≥ 9 mm² (3 mm × 3 mm) at both mesial and distal abutment junctions.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Axial Wall Thickness:</strong> &ge; 0.8 mm circumferential wall thickness on both retainers.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Axial Wall Thickness:</strong> ≥ 0.8 mm circumferential wall thickness on both retainers.</div>
                   </li>
                 </ul>
               </div>
             </article>
           </div>
-
-          <hr class="case-divider" />
-
-          <h3 class="case-title">4 Unit Zirconia Bridge</h3>
-
+          <hr class="case-divider">
+          <h3 class="case-title" id="case-2-title">4 Unit Zirconia Bridge</h3>
           <div class="showcase-grid">
             <!-- Videos -->
             <article class="model-card">
-              <h3>Buccal & Lingual View</h3>
+              <h4>Buccal &amp; Lingual View</h4>
               <div class="video-container">
-                <video
-                  class="native-video"
-                  src="Assets/4-Unit-Zirconia-Bridge/Buccal and Lingual.mp4"
-                  controls
-                  muted
-                  playsinline
-                  preload="metadata">
+                <video class="native-video" src="Assets/4-Unit-Zirconia-Bridge/Buccal%20and%20Lingual.mp4" controls muted playsinline preload="none" aria-label="Buccal &amp; Lingual View — silent dental model demonstration" width="1280" height="720">Your browser does not support video. <a href="Assets/4-Unit-Zirconia-Bridge/Buccal%20and%20Lingual.mp4">Download the silent dental model demonstration.</a>
                 </video>
               </div>
               <div class="clinical-checklist-container">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Emergence Profile:</strong> Controlled emergence angles designed to manage tissue displacement over an extended edentulous span without impinging on the residual alveolar mucosa.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Emergence Profile:</strong> Controlled emergence angles designed to manage tissue displacement over an extended edentulous span without impinging on the residual alveolar mucosa.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Inter-Pontic Embrasure Hygiene:</strong> Specifically sculpted middle embrasure between the two pontics, allowing through-and-through superfloss threading without compromising structural bulk.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Inter-Pontic Embrasure Hygiene:</strong> Specifically sculpted middle embrasure between the two pontics, allowing through-and-through superfloss threading without compromising structural bulk.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Quadrant Continuity:</strong> Uniform alignment of the extended buccal corridor matching the adjacent dentition.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Quadrant Continuity:</strong> Uniform alignment of the extended buccal corridor matching the adjacent dentition.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <article class="model-card">
-              <h3>Occlusal & Intaglio Surface</h3>
+              <h4>Occlusal &amp; Intaglio Surface</h4>
               <div class="video-container">
-                <video
-                  class="native-video"
-                  src="Assets/4-Unit-Zirconia-Bridge/Occlusal and Intaglio.mp4"
-                  controls
-                  muted
-                  playsinline
-                  preload="metadata">
+                <video class="native-video" src="Assets/4-Unit-Zirconia-Bridge/Occlusal%20and%20Intaglio.mp4" controls muted playsinline preload="none" aria-label="Occlusal &amp; Intaglio Surface — silent dental model demonstration" width="1280" height="720">Your browser does not support video. <a href="Assets/4-Unit-Zirconia-Bridge/Occlusal%20and%20Intaglio.mp4">Download the silent dental model demonstration.</a>
                 </video>
               </div>
               <div class="clinical-checklist-container">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Dual-Pontic Architecture:</strong> Dual Modified Ridge Lap contours featuring distinct, convex contact points separated by an open inter-pontic hygiene tunnel.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Dual-Pontic Architecture:</strong> Dual Modified Ridge Lap contours featuring distinct, convex contact points separated by an open inter-pontic hygiene tunnel.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Marginal Integrity:</strong> Strict circular margin adaptation on terminal abutments to resist increased leverage forces across the extended span.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Marginal Integrity:</strong> Strict circular margin adaptation on terminal abutments to resist increased leverage forces across the extended span.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Structural Rounding:</strong> Smooth transitions along all line angles to prevent stress riser formation under elevated flexural load.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Structural Rounding:</strong> Smooth transitions along all line angles to prevent stress riser formation under elevated flexural load.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <!-- Image Comparison Sliders -->
             <article class="model-card slider-card">
-              <h3>Buccal Occlusal Relation</h3>
+              <h4 id="comparison-3-title">Buccal Occlusal Relation</h4>
               <div class="image-comparison-container">
-                <img loading="lazy" src="Assets/4-Unit-Zirconia-Bridge/Buccal Hide Antagonist.png" alt="Buccal view without antagonist teeth" class="img-base" />
-                <div class="img-overlay-wrapper" style="width: 50%;">
-                  <img loading="lazy" src="Assets/4-Unit-Zirconia-Bridge/Buccal show antagonist.png" alt="Buccal view showing antagonist teeth" class="img-overlay" />
+                <img loading="lazy" src="Assets/4-Unit-Zirconia-Bridge/Buccal%20Hide%20Antagonist.png" alt="Buccal view without antagonist teeth" class="img-base" width="1569" height="762" decoding="async">
+                <div class="img-overlay-wrapper">
+                  <img loading="lazy" src="Assets/4-Unit-Zirconia-Bridge/Buccal%20show%20antagonist.png" alt="Buccal view showing antagonist teeth" class="img-overlay" width="1575" height="888" decoding="async">
                 </div>
-                <div class="slider-thumb" style="left: 50%;">
+                <div class="slider-thumb" aria-hidden="true">
                   <div class="thumb-line"></div>
                   <div class="thumb-line"></div>
                 </div>
+                <input class="comparison-range" type="range" min="0" max="100" step="1" value="50" disabled aria-labelledby="case-2-title comparison-3-title" aria-describedby="comparison-3-help">
               </div>
-              <p class="helper-text">Drag left/right to compare</p>
+              <p class="helper-text" id="comparison-3-help">Image comparison</p>
               <div class="clinical-checklist-container">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Narrowed Occlusal Table:</strong> Buccolingual table width reduced by 10% to 15% on pontic units to minimize vertical vector forces and torque on the terminal abutments (Ante's Law compliance).</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Narrowed Occlusal Table:</strong> Buccolingual table width reduced by 10% to 15% on pontic units to minimize vertical vector forces and torque on the terminal abutments (Ante's Law compliance).</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Static Centric Contacts:</strong> Pin-point, non-deflective centric stops without heavy primary occlusal loading on the dual pontic span.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Static Centric Contacts:</strong> Pin-point, non-deflective centric stops without heavy primary occlusal loading on the dual pontic span.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Plane Harmonization:</strong> Strict alignment with the Curve of Spee and Curve of Wilson to prevent premature posterior contacts.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Plane Harmonization:</strong> Strict alignment with the Curve of Spee and Curve of Wilson to prevent premature posterior contacts.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <article class="model-card slider-card">
-              <h3>Lingual Intercuspation</h3>
+              <h4 id="comparison-4-title">Lingual Intercuspation</h4>
               <div class="image-comparison-container">
-                <img loading="lazy" src="Assets/4-Unit-Zirconia-Bridge/Lingual hide antagonist.png" alt="Lingual view without antagonist teeth" class="img-base" />
-                <div class="img-overlay-wrapper" style="width: 50%;">
-                  <img loading="lazy" src="Assets/4-Unit-Zirconia-Bridge/Lingual show antagonist.png" alt="Lingual view showing antagonist teeth" class="img-overlay" />
+                <img loading="lazy" src="Assets/4-Unit-Zirconia-Bridge/Lingual%20hide%20antagonist.png" alt="Lingual view without antagonist teeth" class="img-base" width="1841" height="864" decoding="async">
+                <div class="img-overlay-wrapper">
+                  <img loading="lazy" src="Assets/4-Unit-Zirconia-Bridge/Lingual%20show%20antagonist.png" alt="Lingual view showing antagonist teeth" class="img-overlay" width="1809" height="829" decoding="async">
                 </div>
-                <div class="slider-thumb" style="left: 50%;">
+                <div class="slider-thumb" aria-hidden="true">
                   <div class="thumb-line"></div>
                   <div class="thumb-line"></div>
                 </div>
+                <input class="comparison-range" type="range" min="0" max="100" step="1" value="50" disabled aria-labelledby="case-2-title comparison-4-title" aria-describedby="comparison-4-help">
               </div>
-              <p class="helper-text">Drag left/right to compare</p>
+              <p class="helper-text" id="comparison-4-help">Image comparison</p>
               <div class="clinical-checklist-container">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Complete Excursive Disclusion:</strong> Zero lateral or protrusive working/non-working contacts on either pontic unit to protect the long span from destructive shear forces and bending moments.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Complete Excursive Disclusion:</strong> Zero lateral or protrusive working/non-working contacts on either pontic unit to protect the long span from destructive shear forces and bending moments.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Stress-Free Central Locking:</strong> Stable tripodized holding contacts solely dedicated to axial load absorption.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Stress-Free Central Locking:</strong> Stable tripodized holding contacts solely dedicated to axial load absorption.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <!-- Engineering & Material Standards -->
             <article class="model-card">
-              <h3>Engineering & Material Standards<br>(High-Flexure Management)</h3>
-              <div class="clinical-checklist-container" style="border-top: none; margin-top: 0; padding-top: 0;">
+              <h4>Engineering &amp; Material Standards<br>(High-Flexure Management)</h4>
+              <div class="clinical-checklist-container checklist-standalone">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Connector Hierarchy:</strong> Asymmetrical connector design:
-                      <ul style="margin-top: 0.5rem; margin-bottom: 0;">
-                        <li style="margin-bottom: 0.25rem;"><i class="fa-regular fa-circle" style="font-size: 0.5rem; transform: translateY(4px); color: var(--muted);"></i> <div>Terminal abutment connectors: &ge; 9 to 10 mm&sup2;.</div></li>
-                        <li style="margin-bottom: 0;"><i class="fa-regular fa-circle" style="font-size: 0.5rem; transform: translateY(4px); color: var(--muted);"></i> <div>Central inter-pontic connector: Reinforced to &ge; 12 mm&sup2; (3 mm &times; 4 mm vertical dimension) to counteract the 8&times; flexural bending risk (&Delta; &prop; L&sup3;).</div></li>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Connector Hierarchy:</strong> Asymmetrical connector design:
+                      <ul class="connector-list">
+                        <li>
+                          <i class="fa-regular fa-circle connector-bullet" aria-hidden="true"></i>
+                          <div>Terminal abutment connectors: ≥ 9 to 10 mm².</div>
+                        </li>
+                        <li>
+                          <i class="fa-regular fa-circle connector-bullet" aria-hidden="true"></i>
+                          <div>Central inter-pontic connector: Reinforced to ≥ 12 mm² (3 mm × 4 mm vertical dimension) to counteract the 8× flexural bending risk (Δ ∝ L³).</div>
+                        </li>
                       </ul>
                     </div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Structural Wall Thickness:</strong> &ge; 1.0 mm axial walls on terminal abutments and &ge; 1.5 mm occlusal thickness on all units.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Structural Wall Thickness:</strong> ≥ 1.0 mm axial walls on terminal abutments and ≥ 1.5 mm occlusal thickness on all units.</div>
                   </li>
                 </ul>
               </div>
             </article>
           </div>
-
-          <hr class="case-divider" />
-
-          <h3 class="case-title">3 Unit Upper Zirconia Bridge</h3>
-
+          <hr class="case-divider">
+          <h3 class="case-title" id="case-3-title">3 Unit Upper Zirconia Bridge</h3>
           <div class="showcase-grid">
             <!-- Buccal Slider -->
             <article class="model-card slider-card">
-              <h3>Buccal Occlusal Relation</h3>
+              <h4 id="comparison-5-title">Buccal Occlusal Relation</h4>
               <div class="image-comparison-container">
-                <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Buccal without antagonist.png" alt="Buccal view without antagonist teeth" class="img-base" />
-                <div class="img-overlay-wrapper" style="width: 50%;">
-                  <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Buccal with antagonist.png" alt="Buccal view showing antagonist teeth" class="img-overlay" />
+                <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Buccal%20without%20antagonist.png" alt="Buccal view without antagonist teeth" class="img-base" width="1834" height="775" decoding="async">
+                <div class="img-overlay-wrapper">
+                  <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Buccal%20with%20antagonist.png" alt="Buccal view showing antagonist teeth" class="img-overlay" width="2028" height="1096" decoding="async">
                 </div>
-                <div class="slider-thumb" style="left: 50%;" role="slider" tabindex="0" aria-label="Upper bridge buccal comparison slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-orientation="horizontal">
+                <div class="slider-thumb" aria-hidden="true">
                   <div class="thumb-line"></div>
                   <div class="thumb-line"></div>
                 </div>
+                <input class="comparison-range" type="range" min="0" max="100" step="1" value="50" disabled aria-labelledby="case-3-title comparison-5-title" aria-describedby="comparison-5-help">
               </div>
-              <p class="helper-text">Drag left/right to compare</p>
-
+              <p class="helper-text" id="comparison-5-help">Image comparison</p>
               <div class="clinical-checklist-container">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Functional Occlusal Alignment</strong> — Demonstrates continuous plane of occlusion (Curve of Spee), balanced cervical emergence profiles, and opens embrasure spaces to ensure cleansability and periodontal preservation.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Functional Occlusal Alignment</strong> — Demonstrates continuous plane of occlusion (Curve of Spee), balanced cervical emergence profiles, and opens embrasure spaces to ensure cleansability and periodontal preservation.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Framework Architecture & Margin Fit</strong> — Displays marginal integrity along the preparation boundaries, smooth cervical transitions, and an adequate connector height-to-width ratio (&ge; 9 mm&sup2;) for high-load posterior zones.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Framework Architecture &amp; Margin Fit</strong> — Displays marginal integrity along the preparation boundaries, smooth cervical transitions, and an adequate connector height-to-width ratio (≥ 9 mm²) for high-load posterior zones.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <!-- Occlusal Image -->
             <article class="model-card slider-card">
-              <h3>Occlusal View</h3>
+              <h4 id="comparison-6-title">Occlusal View</h4>
               <div class="image-comparison-container">
-                <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Occlusal-view-before.png" alt="Occlusal view before restoration" class="img-base" />
-                <div class="img-overlay-wrapper" style="width: 50%;">
-                  <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Occlusal-view-after.png" alt="Occlusal view after restoration" class="img-overlay" />
+                <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Occlusal-view-before.png" alt="Occlusal view before restoration" class="img-base" width="1111" height="571" decoding="async">
+                <div class="img-overlay-wrapper">
+                  <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Occlusal-view-after.png" alt="Occlusal view after restoration" class="img-overlay" width="1078" height="502" decoding="async">
                 </div>
-                <div class="slider-thumb" style="left: 50%;" role="slider" tabindex="0" aria-label="Upper bridge occlusal comparison slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-orientation="horizontal">
+                <div class="slider-thumb" aria-hidden="true">
                   <div class="thumb-line"></div>
                   <div class="thumb-line"></div>
                 </div>
+                <input class="comparison-range" type="range" min="0" max="100" step="1" value="50" disabled aria-labelledby="case-3-title comparison-6-title" aria-describedby="comparison-6-help">
               </div>
-              <p class="helper-text">Drag left/right to compare</p>
-
+              <p class="helper-text" id="comparison-6-help">Image comparison</p>
               <div class="clinical-checklist-container mt-auto">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Morphological Precision & Arch Integrity</strong> — Highlights central groove alignment along the posterior arch curve, anatomically balanced triangular ridges, and uniform marginal ridge heights adjacent to natural dentition.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Morphological Precision &amp; Arch Integrity</strong> — Highlights central groove alignment along the posterior arch curve, anatomically balanced triangular ridges, and uniform marginal ridge heights adjacent to natural dentition.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <!-- Lingual Slider -->
             <article class="model-card slider-card">
-              <h3>Lingual Intercuspation</h3>
+              <h4 id="comparison-7-title">Lingual Intercuspation</h4>
               <div class="image-comparison-container">
-                <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Lingual without antagonist.png" alt="Lingual view without antagonist teeth" class="img-base" />
-                <div class="img-overlay-wrapper" style="width: 50%;">
-                  <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Lingual with antagonist.png" alt="Lingual view showing antagonist teeth" class="img-overlay" />
+                <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Lingual%20without%20antagonist.png" alt="Lingual view without antagonist teeth" class="img-base" width="2308" height="873" decoding="async">
+                <div class="img-overlay-wrapper">
+                  <img loading="lazy" src="Assets/3-Unit-Upper-Zirconia-Bridge/Lingual%20with%20antagonist.png" alt="Lingual view showing antagonist teeth" class="img-overlay" width="2314" height="966" decoding="async">
                 </div>
-                <div class="slider-thumb" style="left: 50%;" role="slider" tabindex="0" aria-label="Upper bridge lingual comparison slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-orientation="horizontal">
+                <div class="slider-thumb" aria-hidden="true">
                   <div class="thumb-line"></div>
                   <div class="thumb-line"></div>
                 </div>
+                <input class="comparison-range" type="range" min="0" max="100" step="1" value="50" disabled aria-labelledby="case-3-title comparison-7-title" aria-describedby="comparison-7-help">
               </div>
-              <p class="helper-text">Drag left/right to compare</p>
-
+              <p class="helper-text" id="comparison-7-help">Image comparison</p>
               <div class="clinical-checklist-container">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Cusp-to-Fossa Centric Seating</strong> — Confirms positive, stable seating of functional cusps within opposing fossae while preventing lingual overhangs or unphysiological axial contours.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Cusp-to-Fossa Centric Seating</strong> — Confirms positive, stable seating of functional cusps within opposing fossae while preventing lingual overhangs or unphysiological axial contours.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Lingual Embrasure Form & Polishing Access</strong> — Highlights smooth, rounded connector junctions free of sharp line angles, reducing stress concentration and preventing plaque accumulation.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Lingual Embrasure Form &amp; Polishing Access</strong> — Highlights smooth, rounded connector junctions free of sharp line angles, reducing stress concentration and preventing plaque accumulation.</div>
                   </li>
                 </ul>
               </div>
             </article>
           </div>
-
-          <hr class="case-divider" />
-
-          <h2> Digital Smile Design (DSD)</h2>
-
-          <h3 class="case-title">DSD 6 Anteriors</h3>
-
+          <hr class="case-divider">
+          <h2>Digital Smile Design (DSD)</h2>
+          <h3 class="case-title" id="case-4-title">DSD 6 Anteriors</h3>
           <div class="showcase-grid">
             <article class="model-card image-card">
-              <h3>Occlusal Arch Form & Margin Adaptation</h3>
+              <h4>Occlusal Arch Form &amp; Margin Adaptation</h4>
               <div class="image-container">
-                <img loading="lazy" src="Assets/DSD-6-Anteriors/occlusal-view.jpeg" alt="Occlusal Arch Form & Margin Adaptation" class="img-responsive" />
+                <img loading="lazy" src="Assets/DSD-6-Anteriors/occlusal-view.jpeg" alt="Occlusal Arch Form &amp; Margin Adaptation" class="img-responsive" width="1024" height="698" decoding="async">
               </div>
               <div class="clinical-checklist-container mt-auto">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Margin Integrity:</strong> Smooth and continuous cervical adaptation along the finish line without steps, ledges, or overhangs.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Margin Integrity:</strong> Smooth and continuous cervical adaptation along the finish line without steps, ledges, or overhangs.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Intaglio Adaptation:</strong> Successful internal surface adaptation and clearance without boolean perforation.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Intaglio Adaptation:</strong> Successful internal surface adaptation and clearance without boolean perforation.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Palatal Contour:</strong> Anatomical lingual concavity preserved to allow physiologic anterior guidance and phonetic clearance without bulky lingual anatomy.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Palatal Contour:</strong> Anatomical lingual concavity preserved to allow physiologic anterior guidance and phonetic clearance without bulky lingual anatomy.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <article class="model-card image-card">
-              <h3>Frontal Arch & Dynamic Occlusal Relationship</h3>
+              <h4>Frontal Arch &amp; Dynamic Occlusal Relationship</h4>
               <div class="image-container">
-                <img loading="lazy" src="Assets/DSD-6-Anteriors/over-bite-and-frontal.jpeg" alt="Frontal Arch & Dynamic Occlusal Relationship" class="img-responsive" />
+                <img loading="lazy" src="Assets/DSD-6-Anteriors/over-bite-and-frontal.jpeg" alt="Frontal Arch &amp; Dynamic Occlusal Relationship" class="img-responsive" width="1024" height="717" decoding="async">
               </div>
               <div class="clinical-checklist-container mt-auto">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Midline Alignment:</strong> Corrected pre-operative canting with vertical perpendicularity.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Midline Alignment:</strong> Corrected pre-operative canting with vertical perpendicularity.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Overjet & Overbite:</strong> 1.5 mm vertical overlap and 0.5–1.0 mm horizontal clearance established to eliminate destructive protrusive interference.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Overjet &amp; Overbite:</strong> 1.5 mm vertical overlap and 0.5–1.0 mm horizontal clearance established to eliminate destructive protrusive interference.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Symmetry:</strong> Bilateral quadrant symmetry across central incisors, laterals, and canines.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Symmetry:</strong> Bilateral quadrant symmetry across central incisors, laterals, and canines.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <article class="model-card image-card">
-              <h3>Retracted Pre-Op Overlay & Morphological Reconstruction</h3>
+              <h4>Retracted Pre-Op Overlay &amp; Morphological Reconstruction</h4>
               <div class="image-container">
-                <img loading="lazy" src="Assets/DSD-6-Anteriors/patient-retracted.jpeg" alt="Retracted Pre-Op Overlay & Morphological Reconstruction" class="img-responsive" />
+                <img loading="lazy" src="Assets/DSD-6-Anteriors/patient-retracted.jpeg" alt="Retracted Pre-Op Overlay &amp; Morphological Reconstruction" class="img-responsive" width="1024" height="572" decoding="async">
               </div>
               <div class="clinical-checklist-container mt-auto">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Vertical Dimension Recovery:</strong> Anatomical compensation for severe incisal attrition.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Vertical Dimension Recovery:</strong> Anatomical compensation for severe incisal attrition.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Width-to-Length Ratio:</strong> Central incisor proportions restored to the aesthetic 75–80% range.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Width-to-Length Ratio:</strong> Central incisor proportions restored to the aesthetic 75–80% range.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Gingival Zenith Hierarchy:</strong> Lateral incisors positioned approximately 0.5–1.0 mm coronal to the central incisor and canine zeniths.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Gingival Zenith Hierarchy:</strong> Lateral incisors positioned approximately 0.5–1.0 mm coronal to the central incisor and canine zeniths.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <article class="model-card image-card">
-              <h3>Facial Integration & Full Smile Harmony</h3>
+              <h4>Facial Integration &amp; Full Smile Harmony</h4>
               <div class="image-container">
-                <img loading="lazy" src="Assets/DSD-6-Anteriors/patient-smile.png" alt="Facial Integration & Full Smile Harmony" class="img-responsive" />
+                <img loading="lazy" src="Assets/DSD-6-Anteriors/patient-smile.png" alt="Facial Integration &amp; Full Smile Harmony" class="img-responsive" width="2499" height="1008" decoding="async">
               </div>
               <div class="clinical-checklist-container mt-auto">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Smile Arc (Gull-Wing):</strong> Incisal curvature harmoniously follows the vermilion border of the lower lip.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Smile Arc (Gull-Wing):</strong> Incisal curvature harmoniously follows the vermilion border of the lower lip.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Incisal Display:</strong> Re-established youthful, balanced tooth exposure at rest and during full smile dynamics.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Incisal Display:</strong> Re-established youthful, balanced tooth exposure at rest and during full smile dynamics.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Facial Reference Concordance:</strong> Dental midline aligns with the facial midline and philtrum.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Facial Reference Concordance:</strong> Dental midline aligns with the facial midline and philtrum.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <article class="model-card image-card">
-              <h3>Palatal View, Connectors & Path of Insertion</h3>
+              <h4>Palatal View, Connectors &amp; Path of Insertion</h4>
               <div class="image-container">
-                <img loading="lazy" src="Assets/DSD-6-Anteriors/over-jet-and-intaglio.png" alt="Palatal View, Connectors & Path of Insertion" class="img-responsive" />
+                <img loading="lazy" src="Assets/DSD-6-Anteriors/over-jet-and-intaglio.png" alt="Palatal View, Connectors &amp; Path of Insertion" class="img-responsive" width="2469" height="1030" decoding="async">
               </div>
               <div class="clinical-checklist-container mt-auto">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Connector Cross-Sectional Area:</strong> Connectors optimized (9–12 mm&sup2;) to withstand functional loads in zirconia.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Connector Cross-Sectional Area:</strong> Connectors optimized (9–12 mm²) to withstand functional loads in zirconia.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Embrasure Preservation:</strong> Natural incisal and gingival embrasures preserved for soft-tissue hygiene and light-scattering optics.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Embrasure Preservation:</strong> Natural incisal and gingival embrasures preserved for soft-tissue hygiene and light-scattering optics.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Unified Path of Insertion:</strong> Non-undercut parallel draw verified across all six abutments.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Unified Path of Insertion:</strong> Non-undercut parallel draw verified across all six abutments.</div>
                   </li>
                 </ul>
               </div>
             </article>
           </div>
-
         </div>
       </section>
-
-      <section id="planning-guided-surgery" class="section">
+      <section id="planning-guided-surgery" class="section" tabindex="-1">
         <div class="container">
           <h2>Planning Guided Surgery</h2>
-
-          <h3 class="case-title">Bilateral Mandibular First Molars (LR6 & LL6)</h3>
-
+          <h3 class="case-title" id="case-5-title">Bilateral Mandibular First Molars (LR6 &amp; LL6)</h3>
           <div class="showcase-grid" id="guided-surgery-cards">
             <!-- Card 1: Virtual Foundation -->
             <article class="model-card image-card">
-              <h3>Virtual Foundation &ndash; Alignment & Nerve Mapping</h3>
+              <h4>Virtual Foundation – Alignment &amp; Nerve Mapping</h4>
               <div class="image-container">
-                <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/alignment-and-tracing.png" alt="Virtual Foundation" class="img-responsive" />
+                <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/alignment-and-tracing.png" alt="Virtual Foundation" class="img-responsive" width="2523" height="1065" decoding="async">
               </div>
               <div class="clinical-checklist-container mt-auto">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Surface Matching Integrity &mdash;</strong> Demonstrates precise superimposition of the intraoral surface scan (STL) over the DICOM data. Verifies the absence of scatter distortion, ensuring the surgical guide will seat identically on the physical tissues as planned virtually.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Surface Matching Integrity —</strong> Demonstrates precise superimposition of the intraoral surface scan (STL) over the DICOM data. Verifies the absence of scatter distortion, ensuring the surgical guide will seat identically on the physical tissues as planned virtually.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>IAN Trajectory Mapping &mdash;</strong> Highlights the continuous 3D tracing of the Inferior Alveolar Nerve (IAN) from the mandibular foramen to the mental loop, establishing a reliable baseline for absolute apical safety limits.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>IAN Trajectory Mapping —</strong> Highlights the continuous 3D tracing of the Inferior Alveolar Nerve (IAN) from the mandibular foramen to the mental loop, establishing a reliable baseline for absolute apical safety limits.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <!-- Card 2: LR6 -->
             <article class="model-card image-card">
-              <h3>Mandibular Right First Molar (LR6) &ndash; Dimensions & Placement</h3>
+              <h4>Mandibular Right First Molar (LR6) – Dimensions &amp; Placement</h4>
               <div class="stacked-image-list">
                 <figure class="stacked-image">
                   <figcaption>Dimensions</figcaption>
-                  <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/lr-6-dimensions.png" alt="LR6 Dimensions" />
+                  <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/lr-6-dimensions.png" alt="LR6 Dimensions" width="396" height="637" decoding="async">
                 </figure>
                 <figure class="stacked-image">
                   <figcaption>Placement</figcaption>
-                  <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/lr-6-placement.png" alt="LR6 Placement" />
+                  <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/lr-6-placement.png" alt="LR6 Placement" width="2514" height="1237" decoding="async">
                 </figure>
               </div>
               <div class="technical-info">
@@ -629,32 +637,34 @@
               <div class="clinical-checklist-container mt-auto">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Prosthetic-Driven Trajectory &mdash;</strong> Demonstrates the implant axis is perfectly centered mesiodistally and buccolingually to support the central fossa of the future virtual restoration, ensuring optimal occlusal load distribution.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Prosthetic-Driven Trajectory —</strong> Demonstrates the implant axis is perfectly centered mesiodistally and buccolingually to support the central fossa of the future virtual restoration, ensuring optimal occlusal load distribution.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Biological Safety Margins &mdash;</strong> Confirms a strict > 2.0 mm safety clearance between the implant apex and the roof of the traced IAN canal, eliminating neurosensory risks.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Biological Safety Margins —</strong> Confirms a strict &gt; 2.0 mm safety clearance between the implant apex and the roof of the traced IAN canal, eliminating neurosensory risks.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Bone Envelope Preservation &mdash;</strong> Validates adequate buccal and lingual cortical plate thickness (> 1.5 mm) around the fixture to guarantee long-term osseointegration and prevent soft-tissue recession.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Bone Envelope Preservation —</strong> Validates adequate buccal and lingual cortical plate thickness (&gt; 1.5 mm) around the fixture to guarantee long-term osseointegration and prevent soft-tissue recession.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <!-- Card 3: LL6 -->
             <article class="model-card image-card">
-              <h3>Mandibular Left First Molar (LL6) &ndash; Dimensions & Placement</h3>
+              <h4>Mandibular Left First Molar (LL6) – Dimensions &amp; Placement</h4>
               <div class="stacked-image-list">
                 <figure class="stacked-image">
                   <figcaption>Dimensions</figcaption>
-                  <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/ll-6-dimensions.png" alt="LL6 Dimensions" />
+                  <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/ll-6-dimensions.png" alt="LL6 Dimensions" width="336" height="630" decoding="async">
                 </figure>
                 <figure class="stacked-image">
                   <figcaption>Placement</figcaption>
-                  <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/ll-6-placement.png" alt="LL6 Placement" />
+                  <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/ll-6-placement.png" alt="LL6 Placement" width="2508" height="1240" decoding="async">
                 </figure>
               </div>
               <div class="technical-info">
@@ -663,64 +673,70 @@
               <div class="clinical-checklist-container mt-auto">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Bilateral Symmetry & Restorative Corridor &mdash;</strong> Confirms the contralateral implant matches the optimal emergence profile of the right side. The trajectory is aligned with the restorative corridor to ensure a passive prosthetic fit for the final crowns.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Bilateral Symmetry &amp; Restorative Corridor —</strong> Confirms the contralateral implant matches the optimal emergence profile of the right side. The trajectory is aligned with the restorative corridor to ensure a passive prosthetic fit for the final crowns.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Interdental Hardware Clearance &mdash;</strong> Evaluates the mesiodistal space at the bone crest to ensure the wide-platform surgical instrumentation (drills and master sleeves) will operate without impinging on the adjacent premolar and second molar roots.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Interdental Hardware Clearance —</strong> Evaluates the mesiodistal space at the bone crest to ensure the wide-platform surgical instrumentation (drills and master sleeves) will operate without impinging on the adjacent premolar and second molar roots.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Apical Depth Control &mdash;</strong> Drilling depth is virtually locked relative to the crestal bone topography and submandibular fossa to prevent lingual plate perforation.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Apical Depth Control —</strong> Drilling depth is virtually locked relative to the crestal bone topography and submandibular fossa to prevent lingual plate perforation.</div>
                   </li>
                 </ul>
               </div>
             </article>
-
             <!-- Card 4: Full-Arch -->
             <article class="model-card image-card">
-              <h3>Full-Arch Surgical Guide &ndash; Biomechanics & Fabrication</h3>
-              <div class="image-container slider-container">
-                <img-comparison-slider role="slider" tabindex="0" aria-label="Full-arch surgical guide comparison slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-orientation="horizontal">
-                  <img loading="lazy" slot="first" src="Assets/Surgical-Guide-Lower-RT-LT-6/top-down-occlusal-view.png" alt="Top-Down Occlusal View" class="img-responsive" />
-                  <img loading="lazy" slot="second" src="Assets/Surgical-Guide-Lower-RT-LT-6/oblique-view.png" alt="Oblique View" class="img-responsive" />
-                  <svg slot="handle" class="slider-handle" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                    <circle cx="16" cy="16" r="16" fill="rgba(255,255,255,0.8)" />
-                    <path d="M12 10L6 16L12 22M20 10L26 16L20 22" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </img-comparison-slider>
+              <h4 id="comparison-8-title">Full-Arch Surgical Guide – Biomechanics &amp; Fabrication</h4>
+              <div class="image-comparison-container surgical-comparison">
+                <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/top-down-occlusal-view.png" alt="Top-Down Occlusal View" class="img-base" width="1525" height="937" decoding="async">
+                <div class="img-overlay-wrapper">
+                  <img loading="lazy" src="Assets/Surgical-Guide-Lower-RT-LT-6/oblique-view.png" alt="Oblique View" class="img-overlay" width="1489" height="871" decoding="async">
+                </div>
+                <div class="slider-thumb" aria-hidden="true">
+                  <div class="thumb-line"></div>
+                  <div class="thumb-line"></div>
+                </div>
+                <input class="comparison-range" type="range" min="0" max="100" step="1" value="50" disabled aria-labelledby="case-5-title comparison-8-title" aria-describedby="comparison-8-help">
               </div>
+              <p class="helper-text" id="comparison-8-help">Image comparison</p>
               <div class="technical-info">
                 <strong>Technical Info:</strong> Sleeve Ø: 5.44 mm | Height: 3.50 mm | Z-Axis Offset: 8.00 - 10.00 mm
               </div>
               <div class="clinical-checklist-container mt-auto">
                 <ul class="clinical-checklist">
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Cross-Arch Tripod Stabilization (Top-Down View) &mdash;</strong> Demonstrates the monolithic guide spanning from LR7 to LL7. This bilateral extension completely neutralizes rotational torque and cantilever rocking during the osteotomy protocol, ensuring absolute drill trajectory control.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Cross-Arch Tripod Stabilization (Top-Down View) —</strong> Demonstrates the monolithic guide spanning from LR7 to LL7. This bilateral extension completely neutralizes rotational torque and cantilever rocking during the osteotomy protocol, ensuring absolute drill trajectory control.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Vertical Offset & Enamel Clearance (Oblique View) &mdash;</strong> Highlights the elevated offset utilized to suspend the wide 5.44 mm guide cylinders above the anatomical "height of contour." This critical adjustment prevents the metal sleeves and resin housing from colliding with the narrow cervical interdental space.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Vertical Offset &amp; Enamel Clearance (Oblique View) —</strong> Highlights the elevated offset utilized to suspend the wide 5.44 mm guide cylinders above the anatomical "height of contour." This critical adjustment prevents the metal sleeves and resin housing from colliding with the narrow cervical interdental space.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Zero-Undercut Blockout (Oblique View) &mdash;</strong> Confirms the insertion path algorithm successfully blocked out all cervical undercuts (0.00 mm tolerance). The rigid template will achieve a passive, friction-free seating over the natural dentition without binding.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Zero-Undercut Blockout (Oblique View) —</strong> Confirms the insertion path algorithm successfully blocked out all cervical undercuts (0.00 mm tolerance). The rigid template will achieve a passive, friction-free seating over the natural dentition without binding.</div>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i>
-                    <div><strong>Lateral Irrigation Access (Oblique View) &mdash;</strong> Displays the lateral cooling windows integrated around the sleeve housings, facilitating direct saline coolant flow to prevent thermal bone necrosis during the drilling sequence.</div>
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    <div>
+                      <strong>Lateral Irrigation Access (Oblique View) —</strong> Displays the lateral cooling windows integrated around the sleeve housings, facilitating direct saline coolant flow to prevent thermal bone necrosis during the drilling sequence.</div>
                   </li>
                 </ul>
               </div>
             </article>
           </div>
-
         </div>
       </section>
-
-      <section id="capabilities" class="section">
+      <section id="capabilities" class="section" tabindex="-1">
         <div class="container">
           <h2>Capabilities</h2>
           <div class="capability-grid">
@@ -748,43 +764,40 @@
           </div>
         </div>
       </section>
-
-      <section id="workstation" class="section">
+      <section id="workstation" class="section" tabindex="-1">
         <div class="container">
-          <h2>Workstation & Tech Stack</h2>
+          <h2>Workstation &amp; Tech Stack</h2>
           <ul class="stack-list">
-            <li><strong>CPU:</strong> Intel Core Ultra 9</li>
-            <li><strong>GPU:</strong> NVIDIA GeForce RTX 5070 Ti</li>
-            <li><strong>Core Software:</strong> Blue Sky Plan</li>
-            <li><strong>Focus:</strong> High-throughput digital case planning and design</li>
+            <li>
+              <strong>CPU:</strong> Intel Core Ultra 9</li>
+            <li>
+              <strong>GPU:</strong> NVIDIA GeForce RTX 5070 Ti</li>
+            <li>
+              <strong>Core Software:</strong> Blue Sky Plan</li>
+            <li>
+              <strong>Focus:</strong> High-throughput digital case planning and design</li>
           </ul>
         </div>
       </section>
     </main>
-
-    <footer id="contact" class="section site-footer">
-     <section id="contact" class="contact-section">
-    <h2 class="contact-heading">Contact:</h2>
-    
-    <div class="contact-links">
-        <!-- Email Card -->
-        <a href="mailto:yousifeldadamony@gmail.com" class="contact-card" aria-label="Email">
-            <i class="fa-solid fa-envelope"></i>
-        </a>
-
-        <!-- LinkedIn Card -->
-        <a href="https://www.linkedin.com/in/yousifeldadamony" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-
-        <!-- GitHub Card -->
-        <a href="https://github.com/YousifEldadamony" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-        </a>
-    </div>
-</section>
+    <footer id="contact" class="section site-footer" tabindex="-1">
+      <section class="contact-section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" class="contact-heading">Contact:</h2>
+        <div class="contact-links">
+          <!-- Email Card -->
+          <a href="mailto:yousifeldadamony@gmail.com" class="contact-card" aria-label="Email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/yousifeldadamony" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <!-- GitHub Card -->
+          <a href="https://github.com/YousifEldadamony" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
